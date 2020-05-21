@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    background: #486F7E;
+    background: linear-gradient(0deg, #486F7E 0%, #87CEEB 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    width: 75vw;
+    margin: 100px auto 100px auto;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a, a:active, a:visited, a:focus {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+    text-shadow: 0px 0px 5px #000;
+}
+
+nav > a:hover {
+    text-shadow: 0px 0px 10px #000;
+    transition: 0.2s;
+}
+
+.movies {
+    margin: 100px auto 100px auto;
+}
+
+th { 
+    font-size: 40px;
+}
+
+.title {
+    display: flex;
+    font-size: 30px;
+    width: 30vw;
+    align-items: center;
+    text-align: center;
+    margin: 25px 0px 25px 0px;
+}
+
+.movie-link {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0px 25px 0px;
+    transition: 0.2s;
+}
+
+.movie-link:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.movie-link > img {
+    height: 300px;
+    justify-self: flex-start;
+}
+
+.title, .duration {
+    display: flex;
+    justify-content: center;
+}
+
+#view {
+    margin: 100px auto 100px auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#view > h2 {
+    margin: 25px;
+}
+
+.wypozyczenia-form > input {
+    height: 25px;
+}
