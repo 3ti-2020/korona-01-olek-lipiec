@@ -11,7 +11,7 @@
 
     function table($query, $col) {
 
-        $conn = new mysqli('localhost', 'root', '', 'lipiec', '3308');
+        $conn = new mysqli('localhost', 'root', '', 'lipiec');
 
         $result = $conn->query($query);
 
