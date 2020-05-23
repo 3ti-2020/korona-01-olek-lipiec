@@ -18,7 +18,7 @@
     <nav>
         <a href="listafilmow.php">Lista filmów</a>
         <a href="wypozyczenia.php">Wypożyczenia użytkowników</a>
-        <a href="#">Wypożycz film</a>
+        <a href="wypozycz.php">Wypożycz film</a>
     </nav>
 
     <main>
