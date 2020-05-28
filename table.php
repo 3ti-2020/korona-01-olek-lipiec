@@ -5,7 +5,7 @@
         require("sql.php");
         $result = $conn->query($query);
 
-        echo("<table class='table'>
+        echo("<table>
             <tr>
                 <th>Tytuł</th><th>Imie autora</th><th>Nazwisko autora</th><th>ISBN</th>
             </tr>");

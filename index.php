@@ -8,32 +8,38 @@
 </head>
 <body>
 
-    <?php
+    <div class="table">
+        <?php
+            require("table.php");
 
-        require("table.php");
+            table("SELECT * FROM autorzy, tytuly, krzyzowa WHERE krzyzowa.id_autor=autorzy.id_autor AND krzyzowa.id_tytul=tytuly.id_tytul");
+        ?>
+    </div>
 
-        table("SELECT * FROM autorzy, tytuly, krzyzowa WHERE krzyzowa.id_autor=autorzy.id_autor AND krzyzowa.id_tytul=tytuly.id_tytul");
+    <div class="add">
+        <h2>Dodaj książkę</h2>
+        <form action="add.php" method="GET">
 
-    ?>
+            <input type="text" name="imie-autora" placeholder="Imie">
+            <input type="text" name="nazwisko-autora" placeholder="Nazwisko">
+            <input type="text" name="tytul" placeholder="Tytuł">
+            <input type="text" name="isbn" placeholder="ISBN">
+            <input type="submit" value="Dodaj">
 
-    <form action="add.php" method="GET">
+        </form>
+    </div>
 
-        <input type="text" name="imie-autora">
-        <input type="text" name="nazwisko-autora">
-        <input type="text" name="tytul">
-        <input type="text" name="isbn">
-        <input type="submit" value="Dodaj">
+    <div class="remove">
+        <h2>Usuń książkę</h2>
+        <form action="remove.php" method="GET">
 
-    </form>
+            <input type="text" name="imie-autora" placeholder="Imie">
+            <input type="text" name="nazwisko-autora" placeholder="Nazwisko">
+            <input type="text" name="tytul" placeholder="Tytuł">
+            <input type="submit" value="Usuń">
 
-    <form action="remove.php" method="GET">
-
-        <input type="text" name="imie-autora">
-        <input type="text" name="nazwisko-autora">
-        <input type="text" name="tytul">
-        <input type="submit" value="Usuń">
-
-    </form>
+        </form>
+    </add>
     
 </body>
 </html>
